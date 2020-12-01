@@ -1,0 +1,271 @@
+@Article{desantis2020,
+    AUTHOR = {Rodrigo Barbosa de Santis,and Marcelo Azevedo Costa1},
+    TITLE = {Isolation Forests for Fault Detection in Small Hydroelectric Plants},
+    HOWPUBLISHED = {Sustainability},
+    MONTH = {10 Aug.},
+    YEAR = {2020},
+    ANNOTE = {
+    
+        This article provides a comparison of iForest with PCA for fault
+        detection. The authors utilize both iForest and Extended iForest,
+        noting the advantages of EIF. The authors present visual results
+        confirming the effectivenes of EIF in detecting system failures.
+
+    },
+}
+
+@Article{ding2013,
+    AUTHOR = {Zhiguo Ding, Minrui Fei},
+    TITLE = {An Anomaly Detection Approach Based on Isolation Forest Algorithm for
+    Streaming Data using Sliding Window},
+    HOWPUBLISHED = {3rd IFAC International Conference on Intelligent Control and
+    Automation Science},
+    MONTH = {Sep 3-4},
+    YEAR = {2013},
+    ANNOTE = {
+        The authors propose Isolation Forest Algorithm for Streaming Data
+        (iForestASD), to address the lack of streaming-data methods in anomaly
+        detection. The authors use sliding windows to model streaming data. This
+        method involves fitting successive iForest models on streaming blocks of
+        data, until the anomaly rate is greater than a given threshold. When the
+        anomaly rate grows too large, it reflects "concept drift," the idea that
+        the model is no longer correctly fit to the data, because the data is
+        changing over time. When the threshold for concept drift is met, the
+        algorithm is re-fit to the current data, and the loop continues.
+    },
+}
+
+@Article{grubbs1950,
+    AUTHOR = {Frank Grubbs},
+    TITLE = {Sample Criteria for Testing Outlying Observations},
+    HOWPUBLISHED = {Ann. Math. Statist.},
+    YEAR = {1950},
+    ANNOTE = {
+
+        This paper establishes "Grubbs' test." The author provides a theoretical
+        framework for detecting if an observation on the largest or smallest end of
+        a sample is of the same normal distribution as the remainder of the sample.
+        The majority of the paper is very mathematical and derives the distribution
+        of the statistic for testing if the highest or lowest observation is an
+        outlier, and other cases: Whether the two highest points are outliers,
+        whether both the high and low points are outliers, etc.
+
+    },
+}
+
+@Article{harari2020,
+    AUTHOR = {Sahand Hariri, Matias Carrasco Kind, Robert J. Brunner},
+    TITLE = {Extended Isolation Forest},
+    HOWPUBLISHED = {arXiv},
+    MONTH = {Jul 8},
+    YEAR = {2020},
+    ANNOTE = {
+        The authors present Extended Isolation Forest (EIF). The authors
+        motivate changes to the iForest algorithm by showing the geometric
+        limitations of simple variable splits. If the data does not have edges
+        that are separated by lines along predictors, iForest underperforms. The
+        authors use an example of a sinusoid curve with Gaussian noise, where
+        the anomalies lie mostly along the peaks of the curve. The original
+        iForest algorithm does not pick up the shape of the data. The authors
+        propose splitting along randomly-generated hyperplanes, instead of along
+        random variables, to address this shortcoming.
+    },
+}
+
+
+@Article{hu2012,
+    AUTHOR = {Jianying Hu et al},
+    TITLE = {A Healthcare Utilization Analysis Framework for Hot Spotting and
+        Contextual Anomaly Detection},
+    HOWPUBLISHED = {National Library of Medicine, NCBI},
+    MONTH = {Nov. 3},
+    YEAR = {2012},
+    ANNOTE = {
+
+        This paper explores anomalous patterns of medical system usage, where an
+        anomaly is contextual (can either be over- or under-utilization. In the
+        discussion of anomaly detection, the authors use three models (CART, Random
+        Forests, and MARS) to predict expected utilization for a patients with
+        diabetes (given their medical condition, for each type of utilization), and
+        then used Grubbs' test to detect anomalies based on the difference between
+        the expected and actual levels of utilization. A patient was marked as
+        anomalous if they were flagged by Grubbs' test for at least one type of
+        visit. 
+
+    },
+}
+
+@Article{liu2009,
+    AUTHOR = {Fei Tony Liu and Kai Ming Ting},
+    TITLE = {Isolation Forest},
+    HOWPUBLISHED = {2008 Eighth IEEE International Conference on Data Mining},
+    MONTH = {January},
+    YEAR = {2009},
+    ANNOTE = {
+    
+        This paper introduces the Isolation Forest (iForest) method. The aim of
+        the paper is to establish a method that addresses pitfalls of standard
+        anomaly detection methods. Standard methods fit models to the normal
+        instances, and so are poorly positioned to detect outliers, in some
+        cases. Isolation Forest is a method that proposes looking at anomalies
+        from a quantitative standpoint: Anomalies are easy to isolate in the
+        feature space, because they are "few and different." The authors
+        establish the theory of the algorithm and its associated anomaly score,
+        and also perform experiments comparing the algorithm to other popular
+        anomaly detection methods (KNN and LOF).
+
+    
+    },
+}
+
+/* @Article{liu2010, */
+/*     AUTHOR = {Fei Tony Liu, Kai Ming Ting, and Zhi-Hua Zhou}, */
+/*     TITLE = {On Detecting Clustered Anomalies Using SCiForest}, */
+/*     HOWPUBLISHED = {???FIXME}, */
+/*     MONTH = {}, */
+/*     YEAR = {}, */
+/*     ANNOTE = { */
+/*         This paper presents Isolation Forest with Split-selection Criterion */
+/*         (SCiForest). This extends iForest to clustered anomalies. In contrast to */
+/*         the original paper, this gives some justification for methodology. */
+/*         Random hyperplanes are used as splits, and selected based on $Sd_{gain}$, */
+/*         a criterion that represents whether anomalies have been separated based */
+/*         on the distributions present on either side of a split. The paper */
+/*         provides a brief literature review and an experimental evaluation of the */
+/*         method. */
+/*     }, */
+/* } */
+
+@Article{,
+    AUTHOR = {Zhen Liu, Xin Liu, Jin Ma, and Hui Gao},
+    TITLE = {An Optimized Computational Framework for Isolation Forest},
+    HOWPUBLISHED = {Mathematical Problems in Engineering, Volume 2018},
+    MONTH = {June 11},
+    YEAR = {2018},
+    ANNOTE = {
+        This article first presents a mathematical argument for a new separation
+        criterion with respect to numerical predictors. The article proposes
+        that for a single predictor, both anomalies and normal instances should
+        be clustered, and share a common distribution. By defining anomalies in
+        this way, the authors allow for the definition of a separability
+        criterion based on probability theory, using the distance between the
+        centers of the two classes, and the total "dispersity" of the values for
+        a single predictor. The authors then define a gradient descent method
+        based on the separability index proposed. The authors then provide an
+        experimental evaluation, acknowledging the shortcomings of tree-based
+        methods.
+    },
+}
+
+
+@Article{matousek2016,
+    AUTHOR = {Jindřich Matoušek and Daniel Tihelka},
+    TITLE = {On the Influence of the Number of Anomalous
+        and Normal Examples in Anomaly-Based
+        Annotation Errors Detection},
+    HOWPUBLISHED = {Springer: Text, Speech, and Dialogue, 19th National
+        Conference, },
+    MONTH = {September 12-16},
+    YEAR = {2016},
+    ANNOTE = {
+     
+        This paper explores the application of anomaly detection to misannotated
+        words in speech processing. The paper explores the application of
+        Gaussian-based models, One-class SVM models, and a model based on
+        Grubbs' Test. The models were trained on various features of the audio
+        sampling data, at the word level.
+
+        TODO read in better detail
+
+    },
+}
+
+@Article{nguyen2019,
+    AUTHOR = {Van Khang Nguyen, Eric Renault, and Ruben Milocco},
+    TITLE = {Environment Monitoring for Anomaly Detection System Using
+        Smartphones},
+    HOWPUBLISHED = {Sensors (Journal), NCBI},
+    MONTH = {September 5},
+    YEAR = {2019},
+    ANNOTE = {
+
+        This paper aims to detect anomalies in road conditions using data collected
+        from smartphone sensors (GPS and accelerometer). Grubbs' Test was applied to
+        the output of traditional lightweight anomaly detection methods, in the
+        hopes of reducing the computational complexity of the overall system. The
+        data involved was processed as a sliding window, so computational complexity
+        was a concern in algorithm selection.
+
+        TODO read in better detail
+
+    },
+}
+
+@Article{xu2020,
+    AUTHOR = {Chengliang Xu, Huanxin Chen},
+    TITLE = { Abnormal energy consumption detection for GSHP system based on
+        ensemble deep learning and statistical modeling method
+    },
+    HOWPUBLISHED = {International Journal of Refrigeration},
+    MONTH = {Feb. 25},
+    YEAR = {2020},
+    ANNOTE = {
+    
+        This paper explores the application of a combination of predictive and
+        parsimonious techniques for anomaly detection on building energy
+        consumption data. The authors propose CEEMD-LSTM for prediction, which
+        is a combination of two less parsimonious models, because the authors
+        favor high prediction accuracy. In the testing phase, the difference
+        between the value predicted by the model and the true value is used as
+        input to Grubbs' Test. Subsets of this data are tested for normality
+        with Lilliefor's Test, before applying Grubbs' Test to each subset to
+        test for abnormality. This approach is used to reduce the
+        dimensionality of the problem, while still providing high prediction accuracy.
+    
+    },
+}
+
+@Article{xu2017,
+    AUTHOR = {Dong Xu, Yanjun Wang, Yulong Meng, and Ziying Zhang},
+    TITLE = {An Improved Data Anomaly Detection Method Based on Isolation Forest},
+    HOWPUBLISHED = { 2017 10th International Symposium on Computational
+    Intelligence and Design (ISCID)},
+    MONTH = {10 Dec.},
+    YEAR = {2017},
+    ANNOTE = {
+
+        This paper proposes SA-iForest, a method addressing the flaws of
+        redundancy in the iTrees of the original model. In this model, the trees
+        are perturbed in accordance with a Simulated Annealing design. The
+        language of the paper is hard to decipher.
+
+    },
+}
+
+
+/* @Article{temp, */
+/*     AUTHOR = {}, */
+/*     TITLE = {Predicting  failures  in  hard  drivers  based  on  isolation */
+/*         forest algorithm using sliding window}, */
+/*     HOWPUBLISHED = {Journal of Physics: Conference Series}, */
+/*     MONTH = {}, */
+/*     YEAR = {2019}, */
+/*     ANNOTE = { */
+    
+/*         This paper presents iForest in a streaming data context, using a */
+/*         sliding window. The authors note the strength of iForest's low time */
+/*         complexity in applications with large volumes of data that are */
+/*         processed quickly. */ 
+
+/*     }, */
+/* } */
+
+
+/* @Article{, */
+/*     AUTHOR = {}, */
+/*     TITLE = {}, */
+/*     HOWPUBLISHED = {}, */
+/*     MONTH = {}, */
+/*     YEAR = {}, */
+/*     ANNOTE = {}, */
+/* } */
